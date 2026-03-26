@@ -5,7 +5,7 @@ import google.generativeai as genai
 genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
 # Lấy model text
-model = genai.TextModel(model="models/text-bison-001")
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 st.title('Choose the drink')
 
