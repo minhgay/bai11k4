@@ -49,7 +49,7 @@ if sub:
         Dùng ngôn ngữ thân thiện gửi khách hàng.
         """
         try:
-            r = model.generate_text(prompt)
+            r = model.generate_content(prompt)
             st.info(r.text)
         except Exception as e:
             st.error('AI-errored: ' + str(e))
