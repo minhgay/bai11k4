@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Cấu hình API
-genai.configure(api_key=st.secrets['gg_api'])
+genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
 # Lấy model text
 model = genai.TextModel(model="models/text-bison-001")
