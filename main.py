@@ -54,8 +54,8 @@ if sub:
         except Exception as e:
             st.error('AI-errored: ' + str(e))
 
-    print_bill = st.checkbox('Print bill')
-    if print_bill:
+print_bill = st.checkbox('Print bill')
+if print_bill and sub:
         ans = ''
         for x, y in bill.items():
             ans += f"{x}: {y}\n"
